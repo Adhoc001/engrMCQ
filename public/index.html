@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body::after{
+        content: none;
+      }
+    </style>
+</head>
+<body>
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-50">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-4" href="./">
+              <img src="engrlogo.png" alt="Logo" width="180" height="45" class="mx-2">
+    <!--      <span class="fs-4"></span>  -->
+            </a>
+            <button class="navbar-toggler my-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link active fs-5" href="https://www.facebook.com/share/g/AbBJyUEvDURwsHbT/" target="_blank">Join Us</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link active fs-5" href="https://www.prc.gov.ph/2025-schedule-examination" target="_blank">PRC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 ms-4" href="./" target="_blank"><strike>Leakage</strike></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Countdown Timer Section -->
+     <div class="countdown">
+      <div class="time-section" id="days">
+        <div class="time-group">
+          <div class="time-segment">
+            <div class="segment-display">
+              <div class="segment-display__top"></div>
+              <div class="segment-display__bottom"></div>
+              <div class="segment-overlay">
+                <div class="segment-overlay__top"></div>
+                <div class="segment-overlay__bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="time-segment">
+            <div class="segment-display">
+              <div class="segment-display__top"></div>
+              <div class="segment-display__bottom"></div>
+              <div class="segment-overlay">
+                <div class="segment-overlay__top"></div>
+                <div class="segment-overlay__bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="time-segment">
+            <div class="segment-display">
+              <div class="segment-display__top"></div>
+              <div class="segment-display__bottom"></div>
+              <div class="segment-overlay">
+                <div class="segment-overlay__top"></div>
+                <div class="segment-overlay__bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>Days</p>
+      </div>
+      
+        <div class="time-section" id="hours">
+          <div class="time-group">
+            <div class="time-segment">
+              <div class="segment-display">
+                <div class="segment-display__top"></div>
+                <div class="segment-display__bottom"></div>
+                <div class="segment-overlay">
+                  <div class="segment-overlay__top"></div>
+                  <div class="segment-overlay__bottom"></div>
+                </div>
+              </div>
+            </div>
+            <div class="time-segment">
+              <div class="segment-display">
+                <div class="segment-display__top"></div>
+                <div class="segment-display__bottom"></div>
+                <div class="segment-overlay">
+                  <div class="segment-overlay__top"></div>
+                  <div class="segment-overlay__bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>Hours</p>
+        </div>
+      
+        <div class="time-section" id="minutes">
+          <div class="time-group">
+            <div class="time-segment">
+              <div class="segment-display">
+                <div class="segment-display__top"></div>
+                <div class="segment-display__bottom"></div>
+                <div class="segment-overlay">
+                  <div class="segment-overlay__top"></div>
+                  <div class="segment-overlay__bottom"></div>
+                </div>
+              </div>
+            </div>
+            <div class="time-segment">
+              <div class="segment-display">
+                <div class="segment-display__top"></div>
+                <div class="segment-display__bottom"></div>
+                <div class="segment-overlay">
+                  <div class="segment-overlay__top"></div>
+                  <div class="segment-overlay__bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>Minutes</p>
+        </div>
+      
+        <div class="time-section" id="seconds">
+          <div class="time-group">
+            <div class="time-segment">
+              <div class="segment-display">
+                <div class="segment-display__top"></div>
+                <div class="segment-display__bottom"></div>
+                <div class="segment-overlay">
+                  <div class="segment-overlay__top"></div>
+                  <div class="segment-overlay__bottom"></div>
+                </div>
+              </div>
+            </div>
+            <div class="time-segment">
+              <div class="segment-display">
+                <div class="segment-display__top"></div>
+                <div class="segment-display__bottom"></div>
+                <div class="segment-overlay">
+                  <div class="segment-overlay__top"></div>
+                  <div class="segment-overlay__bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>Seconds</p>
+        </div>
+      </div>
+
+      <!-- Quotes -->
+    <!--
+      <div class="quote-container" style="font-size: xx-large; font-weight: bolder; background-color: red;">
+        INTERNAL SERVER ERROR! I REPEAT, INTERNAL SERVER ERROR!
+      </div>
+    -->
+      <div class="quote-container">
+        <blockquote class="quote-text">
+          "Studying now is better than leaving the examination room wishing you studied more."
+        </blockquote>
+        <p class="quote-author">– Board Passer sa April 2025</p>
+      </div>
+    
+
+    <!-- Book Cards Section -->
+    
+    <!--MATH-->
+    <div class="container-fluid py-3 px-4 my-5">
+      <div class="row g-4">
+        <div class="col-md-3">
+              <div class="card shadow-sm" style="height: auto;">
+                    <img src="diffcal.png" class="card-img-top" alt="Differential Calculus">
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-date">MATH | # Items | CalcTech</p>
+                        <h5 class="card-title">Differential Calculus ⭐⭐⭐⭐</h5>
+                        <div class="scrollable-text flex-grow-1">
+                          <p class="card-text">
+                              <a href="diffcal01.html" class="text-decoration-none d-block" style="color: gray;">Limits</a>
+                              <a href="diffcal02.html" class="text-decoration-none d-block" style="color: gray;">Derivatives</a>
+                              <a href="diffcal03.html" class="text-decoration-none d-block" style="color: gray;">HIgher Derivatives</a>
+                              <a href="diffcal04.html" class="text-decoration-none d-block" style="color: gray;">Parametric Equations</a>
+                              <a href="diffcal05.html" class="text-decoration-none d-block" style="color: gray;">Partial Differentiation</a>
+                          </p>
+                      </div>
+                      <div class="mt-3">
+
+                        <div class="progress-container">
+                          <div class="progress">
+                            <div 
+                              class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                              role="progressbar" 
+                              style="width: 100%; font-size: large;" 
+                              aria-valuenow="50" 
+                              aria-valuemin="0" 
+                              aria-valuemax="100">
+                              Comming Soon!
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+              <div class="card shadow-sm" style="height: auto;">
+                    <img src="integcal.png" class="card-img-top" alt="Integral Calculus">
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-date">MATH | # Items | CalcTech</p>
+                        <h5 class="card-title">Integral Calculus ⭐⭐⭐⭐</h5>
+                        <div class="scrollable-text flex-grow-1">
+                          <p class="card-text">
+                              <a href="integcal01.html" class="text-decoration-none d-block" style="color: gray;">Integration Concepts</a>
+                              <a href="integcal02.html" class="text-decoration-none d-block" style="color: gray;">Integration Techniques</a>
+                              <a href="integcal03.html" class="text-decoration-none d-block" style="color: gray;">Improper Integras</a>
+                              <a href="integcal04.html" class="text-decoration-none d-block" style="color: gray;">Applications</a>
+                              <a href="integcal05.html" class="text-decoration-none d-block" style="color: gray;">Multiple Integration</a>
+                          </p>
+                      </div>
+                      <div class="mt-3">
+
+                        <div class="progress-container">
+                          <div class="progress">
+                            <div 
+                              class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                              role="progressbar" 
+                              style="width: 100%; font-size: large;" 
+                              aria-valuenow="50" 
+                              aria-valuemin="0" 
+                              aria-valuemax="100">
+                              Comming Soon!
+                            </div>
+                          </div>
+                        </div>  
+
+                      </div>
+                    </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+              <div class="card shadow-sm" style="height: auto;">
+                    <img src="de.png" class="card-img-top" alt="Differential Equations">
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-date">MATH | # Items | CalcTech</p>
+                        <h5 class="card-title">Differential Equation ⭐⭐⭐⭐</h5>
+                        <div class="scrollable-text flex-grow-1">
+                          <p class="card-text">
+                              <a href="de01.html" class="text-decoration-none d-block" style="color: gray;">First Order/Degree ODE</a>
+                              <a href="de02.html" class="text-decoration-none d-block" style="color: gray;">Higher ODE</a>
+                              <a href="de03.html" class="text-decoration-none d-block" style="color: gray;">Laplace</a>
+                              <a href="de04.html" class="text-decoration-none d-block" style="color: gray;">Inverse Laplace</a>
+                              <a href="de05.html" class="text-decoration-none d-block" style="color: gray;">Applications</a>
+                          </p>
+                      </div>
+                      <div class="mt-3">
+                          
+                        <div class="progress-container">
+                          <div class="progress">
+                            <div 
+                              class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                              role="progressbar" 
+                              style="width: 100%; font-size: large;" 
+                              aria-valuenow="50" 
+                              aria-valuemin="0" 
+                              aria-valuemax="100">
+                              Comming Soon!
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+              <div class="card shadow-sm" style="height: auto;">
+                    <img src="advmath.png" class="card-img-top" alt="Advanced Mathematics">
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-date">MATH | # Items | CalcTech</p>
+                        <h5 class="card-title">Advanced Mathematics ⭐⭐⭐⭐</h5>
+                        <div class="scrollable-text flex-grow-1">
+                          <p class="card-text">
+                              <a href="advmath01.html" class="text-decoration-none d-block" style="color: gray;">Complex Numbers</a>
+                              <a href="advmath02.html" class="text-decoration-none d-block" style="color: gray;">Series</a>
+                              <a href="advmath03.html" class="text-decoration-none d-block" style="color: gray;">Transforms</a>
+                              <a href="advmath04.html" class="text-decoration-none d-block" style="color: gray;">Application </a>
+                              <a href="advmath05.html" class="text-decoration-none d-block" style="color: gray;">Ordinary and Partial DE</a>
+                          </p>
+                      </div>
+                      <div class="mt-3">
+
+                        <div class="progress-container">
+                          <div class="progress">
+                            <div 
+                              class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                              role="progressbar" 
+                              style="width: 100%; font-size: large;" 
+                              aria-valuenow="50" 
+                              aria-valuemin="0" 
+                              aria-valuemax="100">
+                              Comming Soon!
+                            </div>
+                          </div>
+                        </div>
+                          
+                      </div>
+                    </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ELEX-->
+    <div class="container-fluid py-3 px-4 my-5">
+      <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="elexfundamentals01.png" class="card-img-top" alt="Elex Fundamentals 1">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">ELEX | # Items | 15 Chapters</p>
+                    <h5 class="card-title">Indiabix 1 ⭐⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="indiabix101.html" class="text-decoration-none d-block">Semiconductors</a>
+                            <a href="indiabix102.html" class="text-decoration-none d-block">Special Purpose Diodes</a>
+                            <a href="indiabix103.html" class="text-decoration-none d-block">Bipolar Junction Transistors</a>
+                            <a href="indiabix104.html" class="text-decoration-none d-block">BJT Devices</a>
+                            <a href="indiabix105.html" class="text-decoration-none d-block">BJT Amplifiers</a>
+                            <a href="indiabix106.html" class="text-decoration-none d-block" style="color: gray;">FET Devices</a>
+                            <a href="indiabix107.html" class="text-decoration-none d-block" style="color: gray;">FET Amplifiers </a>
+                            <a href="indiabix108.html" class="text-decoration-none d-block" style="color: gray;">BJT and FET Frequency Response</a>
+                            <a href="indiabix109.html" class="text-decoration-none d-block" style="color: gray;">Basic OP AMP Circuits</a>
+                            <a href="indiabix110.html" class="text-decoration-none d-block" style="color: gray;">Semiconductor Diodes</a>
+                            <a href="indiabix111.html" class="text-decoration-none d-block" style="color: gray;">Diode Applications</a>
+                            <a href="indiabix112.html" class="text-decoration-none d-block" style="color: gray;">Transistor Bias Circuits</a>
+                            <a href="indiabix113.html" class="text-decoration-none d-block" style="color: gray;">DC Biasing BJTs</a>
+                            <a href="indiabix114.html" class="text-decoration-none d-block" style="color: gray;">Field Effect Transistors</a>
+                            <a href="indiabix115.html" class="text-decoration-none d-block" style="color: gray;">DC Biasing FETs</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        
+                      <div class="progress-container">
+                        <div class="progress">
+                          <div 
+                            class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                            role="progressbar" 
+                            style="width: 38%;" 
+                            aria-valuenow="50" 
+                            aria-valuemin="0" 
+                            aria-valuemax="100">
+                            38%
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="elexfundamentals02.png" class="card-img-top" alt="Elex Fundamentals 2">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">ELEX | # Items | 25 Chapters</p>
+                    <h5 class="card-title">Indiabix 2 ⭐⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="indiabix201.html" class="text-decoration-none d-block">Voltage and Current</a>
+                            <a href="indiabix202.html" class="text-decoration-none d-block">Parallel Circuits</a>
+                            <a href="indiabix203.html" class="text-decoration-none d-block">Capacitors</a>
+                            <a href="indiabix204.html" class="text-decoration-none d-block">Series Circuit</a>
+                            <a href="indiabix205.html" class="text-decoration-none d-block">Series Parallel Circuits</a>
+                            <a href="indiabix206.html" class="text-decoration-none d-block" style="color: gray;">Inductors</a>
+                            <a href="indiabix207.html" class="text-decoration-none d-block" style="color: gray;">RLC Circuits and Resonance </a>
+                            <a href="indiabix208.html" class="text-decoration-none d-block" style="color: gray;">Diodes and Applications</a>
+                            <a href="indiabix209.html" class="text-decoration-none d-block" style="color: gray;">OP Amps 1</a>
+                            <a href="indiabix210.html" class="text-decoration-none d-block" style="color: gray;">Ohm's Law</a>
+                            <a href="indiabix211.html" class="text-decoration-none d-block" style="color: gray;">Quantities and Units</a>
+                            <a href="indiabix212.html" class="text-decoration-none d-block" style="color: gray;">Magnetism and Electromagnetism</a>
+                            <a href="indiabix213.html" class="text-decoration-none d-block" style="color: gray;">Amplifier Frequency Response</a>
+                            <a href="indiabix214.html" class="text-decoration-none d-block" style="color: gray;">Op Amps 2</a>
+                            <a href="indiabix215.html" class="text-decoration-none d-block" style="color: gray;">Basic OP Amp Circuits</a>
+                            <a href="indiabix216.html" class="text-decoration-none d-block" style="color: gray;">Special Purpose OP Amp Circuits</a>
+                            <a href="indiabix217.html" class="text-decoration-none d-block" style="color: gray;">OP Amp Applications</a>
+                            <a href="indiabix218.html" class="text-decoration-none d-block" style="color: gray;">Power Amplifiers</a>
+                            <a href="indiabix219.html" class="text-decoration-none d-block" style="color: gray;">Oscillator Circuits</a>
+                            <a href="indiabix220.html" class="text-decoration-none d-block" style="color: gray;">Active Filters</a>
+                            <a href="indiabix221.html" class="text-decoration-none d-block" style="color: gray;">Communications</a>
+                            <a href="indiabix222.html" class="text-decoration-none d-block" style="color: gray;">Thyristors</a>
+                            <a href="indiabix223.html" class="text-decoration-none d-block" style="color: gray;">Two-terminals Devices</a>
+                            <a href="indiabix224.html" class="text-decoration-none d-block" style="color: gray;">PNPN</a>
+                            <a href="indiabix225.html" class="text-decoration-none d-block" style="color: gray;">Linear Digital IC's</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        
+                      <div class="progress-container">
+                        <div class="progress">
+                          <div 
+                            class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                            role="progressbar" 
+                            style="width: 27%;" 
+                            aria-valuenow="50" 
+                            aria-valuemin="0" 
+                            aria-valuemax="100">
+                            27%
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="elexfundamentals03.png" class="card-img-top" alt="Elex Fundamentals 3">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">ELEX | # Items | 34 Chapters</p>
+                    <h5 class="card-title">Indiabix 3 ⭐⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="indiabix301.html" class="text-decoration-none d-block">RC Circuits</a>
+                            <a href="indiabix302.html" class="text-decoration-none d-block">RL Circuits</a>
+                            <a href="indiabix303.html" class="text-decoration-none d-block">Transformers</a>
+                            <a href="indiabix304.html" class="text-decoration-none d-block">Time Response of Reactive Circuits</a>
+                            <a href="indiabix305.html" class="text-decoration-none d-block">Transistors and Applications</a>
+                            <a href="indiabix306.html" class="text-decoration-none d-block">Basic OP Amp Circuits</a>
+                            <a href="indiabix307.html" class="text-decoration-none d-block" style="color: gray;">Special Purpose OP Amp Circuits </a>
+                            <a href="indiabix308.html" class="text-decoration-none d-block" style="color: gray;">Measurement</a>
+                            <a href="indiabix309.html" class="text-decoration-none d-block" style="color: gray;">Conversion and Control</a>
+                            <a href="indiabix310.html" class="text-decoration-none d-block" style="color: gray;">AC vs DC</a>
+                            <a href="indiabix311.html" class="text-decoration-none d-block" style="color: gray;">Semiconductor Principles</a>
+                            <a href="indiabix312.html" class="text-decoration-none d-block" style="color: gray;">BJT</a>
+                            <a href="indiabix313.html" class="text-decoration-none d-block" style="color: gray;">FET</a>
+                            <a href="indiabix314.html" class="text-decoration-none d-block" style="color: gray;">Thyristors and Transducers</a>
+                            <a href="indiabix315.html" class="text-decoration-none d-block" style="color: gray;">Analog to Digital</a>
+                            <a href="indiabix316.html" class="text-decoration-none d-block" style="color: gray;">Number Systems and Codes</a>
+                            <a href="indiabix317.html" class="text-decoration-none d-block" style="color: gray;">Logic Gates</a>
+                            <a href="indiabix318.html" class="text-decoration-none d-block" style="color: gray;">Logic Circuit Simplification</a>
+                            <a href="indiabix319.html" class="text-decoration-none d-block" style="color: gray;">SLD PLD</a>
+                            <a href="indiabix320.html" class="text-decoration-none d-block" style="color: gray;">Testing and Troubleshooting</a>
+                            <a href="indiabix321.html" class="text-decoration-none d-block" style="color: gray;">Combinational Logic Circuits</a>
+                            <a href="indiabix322.html" class="text-decoration-none d-block" style="color: gray;">Flip-flops and Timers</a>
+                            <a href="indiabix323.html" class="text-decoration-none d-block" style="color: gray;">Sequencial Logic Circuits</a>
+                            <a href="indiabix324.html" class="text-decoration-none d-block" style="color: gray;">Arithmetic Operations and Circuits</a>
+                            <a href="indiabix325.html" class="text-decoration-none d-block" style="color: gray;">Semiconductor Memory</a>
+                            <a href="indiabix326.html" class="text-decoration-none d-block" style="color: gray;">Analog and Digital Converters</a>
+                            <a href="indiabix327.html" class="text-decoration-none d-block" style="color: gray;">Computer Hardware and Software</a>
+                            <a href="indiabix328.html" class="text-decoration-none d-block" style="color: gray;">Digital Concepts</a>
+                            <a href="indiabix329.html" class="text-decoration-none d-block" style="color: gray;">Number Systems and Codes</a>
+                            <a href="indiabix330.html" class="text-decoration-none d-block" style="color: gray;">Logic Gates</a>
+                            <a href="indiabix331.html" class="text-decoration-none d-block" style="color: gray;">EX-OR and EX-NOR Gates</a>
+                            <a href="indiabix332.html" class="text-decoration-none d-block" style="color: gray;">Boolean and Logic Simplification</a>
+                            <a href="indiabix333.html" class="text-decoration-none d-block" style="color: gray;">Describing Logic Circuits</a>
+                            <a href="indiabix334.html" class="text-decoration-none d-block" style="color: gray;">Combinational Logic Analysis</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        
+                      <div class="progress-container">
+                        <div class="progress">
+                          <div 
+                            class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                            role="progressbar" 
+                            style="width: 20%;" 
+                            aria-valuenow="50" 
+                            aria-valuemin="0" 
+                            aria-valuemax="100">
+                            20%
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="gibilisco.jpg" class="card-img-top" alt="Gibilisco">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">ELEX | 670 Items | 29 Chapters</p>
+                    <h5 class="card-title">Gibilisco ⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="gibilisco01.html" class="text-decoration-none d-block">Basic Physical Concepts</a>
+                            <a href="gibilisco02.html" class="text-decoration-none d-block">Electrical Units</a>
+                            <a href="gibilisco03.html" class="text-decoration-none d-block">Measuring Devices</a>
+                            <a href="gibilisco04.html" class="text-decoration-none d-block">DC Circuit Basics</a>
+                            <a href="gibilisco05.html" class="text-decoration-none d-block">DC Circuit Analysis</a>
+                            <a href="gibilisco06.html" class="text-decoration-none d-block">Resistors</a>
+                            <a href="gibilisco07.html" class="text-decoration-none d-block">Cells and Batteries</a>
+                            <a href="gibilisco08.html" class="text-decoration-none d-block">Magnetism</a>
+                            <a href="gibiliscotest01.html" class="text-decoration-none d-block">TEST 01: Direct Current</a>
+                            <a href="gibilisco09.html" class="text-decoration-none d-block">AC Basics</a>
+                            <a href="gibilisco10.html" class="text-decoration-none d-block">Inductance</a>
+                            <a href="gibilisco11.html" class="text-decoration-none d-block">Capacitance</a>
+                            <a href="gibilisco12.html" class="text-decoration-none d-block">Phase</a>
+                            <a href="gibilisco13.html" class="text-decoration-none d-block">Inductive Reactance</a>
+                            <a href="gibilisco14.html" class="text-decoration-none d-block">Capacitive Reactance</a>
+                            <a href="gibilisco15.html" class="text-decoration-none d-block">Impedance and Admittance</a>
+                            <a href="gibilisco16.html" class="text-decoration-none d-block">RLC and GLC Circuit Analysis</a>
+                            <a href="gibilisco17.html" class="text-decoration-none d-block">Power and Resonance in AC Circuit</a>
+                            <a href="gibilisco18.html" class="text-decoration-none d-block">Tansformers and Impedance Matching</a>
+                            <a href="gibiliscotest02.html" class="text-decoration-none d-block">TEST 02: Alternating Current</a>
+                            <a href="gibilisco19.html" class="text-decoration-none d-block" style="color: gray;">Introduction to Semiconductors</a>
+                            <a href="gibilisco20.html" class="text-decoration-none d-block" style="color: gray;">How Diodes are Used</a>
+                            <a href="gibilisco21.html" class="text-decoration-none d-block" style="color: gray;">Power Supplies</a>
+                            <a href="gibilisco22.html" class="text-decoration-none d-block" style="color: gray;">The Bipolar Transistor</a>
+                            <a href="gibilisco23.html" class="text-decoration-none d-block" style="color: gray;">The Field Effect Transistor</a>
+                            <a href="gibilisco24.html" class="text-decoration-none d-block" style="color: gray;">Amplifiers and Oscillators</a>
+                            <a href="gibilisco25.html" class="text-decoration-none d-block" style="color: gray;">Wireless Transmitters and Receivers</a>
+                            <a href="gibilisco26.html" class="text-decoration-none d-block" style="color: gray;">Digital Basics</a>
+                            <a href="gibiliscotest03.html" class="text-decoration-none d-block" style="color: gray;">TEST 03: Basic Electronics</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        
+                      <div class="progress-container">
+                        <div class="progress">
+                          <div 
+                            class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                            role="progressbar" 
+                            style="width: 57%;" 
+                            aria-valuenow="50" 
+                            aria-valuemin="0" 
+                            aria-valuemax="100">
+                            57%
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="grob.jpg" class="card-img-top" alt="Grob">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">ELEX | 647 Items | 33 Chapters</p>
+                    <h5 class="card-title">Grob ⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="grob01.html" class="text-decoration-none d-block">Electricity</a>
+                            <a href="grob02.html" class="text-decoration-none d-block">Resistors</a>
+                            <a href="grob03.html" class="text-decoration-none d-block">Ohm's Law</a>
+                            <a href="grob04.html" class="text-decoration-none d-block">Series Circuits</a>
+                            <a href="grob05.html" class="text-decoration-none d-block">Parallel Circuits</a>
+                            <a href="grob06.html" class="text-decoration-none d-block">Series-Parallel Circuits</a>
+                            <a href="grobTest01.html" class="text-decoration-none d-block">Cumulative Review Self-Test</a>
+                            <a href="grob07.html" class="text-decoration-none d-block">Voltage Dividers And Current Dividers</a>
+                            <a href="grob08.html" class="text-decoration-none d-block">Analog and Digital Multimeters</a>
+                            <a href="grob09.html" class="text-decoration-none d-block">Kirchhoff’s Laws</a>
+                            <a href="grob10.html" class="text-decoration-none d-block">Network Theorems</a>
+                            <a href="grob11.html" class="text-decoration-none d-block">Conductors and Insulators</a>
+                            <a href="grob12.html" class="text-decoration-none d-block">Batteries</a>
+                            <a href="grobTest02.html" class="text-decoration-none d-block">Cumulative Review Self-Test</a>
+                            <a href="grob13.html" class="text-decoration-none d-block">Magnetism</a>
+                            <a href="grob14.html" class="text-decoration-none d-block">Electromagnetism</a>
+                            <a href="grob15.html" class="text-decoration-none d-block">Alternating Voltage and Current</a>
+                            <a href="grobTest03.html" class="text-decoration-none d-block">Cumulative Review Self-Test</a>
+                            <a href="grob16.html" class="text-decoration-none d-block">Capacitance</a>
+                            <a href="grob17.html" class="text-decoration-none d-block">Capacitive Reactance</a>
+                            <a href="grob18.html" class="text-decoration-none d-block">Capacitive Circuits</a>
+                            <a href="grob19.html" class="text-decoration-none d-block">Inductance</a>
+                            <a href="grob20.html" class="text-decoration-none d-block">Inductive Reactance</a>
+                            <a href="grob21.html" class="text-decoration-none d-block">Inductive Circuits</a>
+                            <a href="grob22.html" class="text-decoration-none d-block">RC and L/R Time Constants</a>
+                            <a href="grobTest04.html" class="text-decoration-none d-block">Cumulative Review Self-Test</a>
+                            <a href="grob23.html" class="text-decoration-none d-block">Alternating Current Circuits</a>
+                            <a href="grob24.html" class="text-decoration-none d-block">Complex Numbers For AC Circuits</a>
+                            <a href="grob25.html" class="text-decoration-none d-block">Resonance</a>
+                            <a href="grob26.html" class="text-decoration-none d-block">Filters</a>
+                            <a href="grob27.html" class="text-decoration-none d-block">Diode and Diode Applications</a>
+                            <a href="grob28.html" class="text-decoration-none d-block">Bipolar Junction Transistors</a>
+                            <a href="grob29.html" class="text-decoration-none d-block">Transistor Amplifiers</a>
+                            <a href="grob30.html" class="text-decoration-none d-block">Field Effect Transistors</a>
+                            <a href="grob31.html" class="text-decoration-none d-block">Power Amplifiers</a>
+                            <a href="grob32.html" class="text-decoration-none d-block">Thyristor</a>
+                            <a href="grob33.html" class="text-decoration-none d-block">Operational Amplifiers</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="grobStudy.html" class="btn btn-read-more btn-success">Study</a>
+                        <a href="grobMastery.html" class="btn btn-read-more btn-success">Mastery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="floyd.jpg" class="card-img-top" alt="Floyd">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">ELEX | 364 Items | 18 Chapters</p>
+                    <h5 class="card-title">Floyd ⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="floyd01.html" class="text-decoration-none d-block">Introduction to Semiconductors</a>
+                            <a href="floyd02.html" class="text-decoration-none d-block">Diode Applications</a>
+                            <a href="floyd03.html" class="text-decoration-none d-block">Special Purpose Diodes</a>
+                            <a href="floyd04.html" class="text-decoration-none d-block">Bipolar Junction Transistors</a>
+                            <a href="floyd05.html" class="text-decoration-none d-block">Transistor Bias Circuits</a>
+                            <a href="floyd06.html" class="text-decoration-none d-block">BJT Amplifiers</a>
+                            <a href="floyd07.html" class="text-decoration-none d-block">Power Amplifiers </a>
+                            <a href="floyd08.html" class="text-decoration-none d-block">Field Effect Transistors (FETs)</a>
+                            <a href="floyd09.html" class="text-decoration-none d-block">FET Amplifiers and Switching Circuits</a>
+                            <a href="floyd10.html" class="text-decoration-none d-block">Amplifier Frequency Response</a>
+                            <a href="floyd11.html" class="text-decoration-none d-block">Thyristors</a>
+                            <a href="floyd12.html" class="text-decoration-none d-block">The Operational Amplifiers</a>
+                            <a href="floyd13.html" class="text-decoration-none d-block">Basic Op-Amp Circuits</a>
+                            <a href="floyd14.html" class="text-decoration-none d-block">Special Purpose Op-Amp Circuits</a>
+                            <a href="floyd15.html" class="text-decoration-none d-block">Active Filters</a>
+                            <a href="floyd16.html" class="text-decoration-none d-block">Oscillators</a>
+                            <a href="floyd17.html" class="text-decoration-none d-block">Voltage Regulators</a>
+                            <a href="floyd18.html" class="text-decoration-none d-block">Communications</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="floydStudy.html" class="btn btn-read-more btn-success">Study</a>
+                        <a href="floydMastery.html" class="btn btn-read-more btn-success">Mastery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="bird.png" class="card-img-top" alt="Bird">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">ELEX | 335 Items | 23 Chapters</p>
+                    <h5 class="card-title">John Bird ⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="bird01.html" class="text-decoration-none d-block">Units Associated with Basic Electrical Quantities</a>
+                            <a href="bird02.html" class="text-decoration-none d-block">Introduction to Electrical Circuits</a>
+                            <a href="bird03.html" class="text-decoration-none d-block">Resistance Vibration</a>
+                            <a href="bird04.html" class="text-decoration-none d-block">Batteries and Alternative Sources of Energy</a>
+                            <a href="bird05.html" class="text-decoration-none d-block">Series and Parallel Networks</a>
+                            <a href="bird06.html" class="text-decoration-none d-block">Capacitors and Capacitance</a>
+                            <a href="bird07.html" class="text-decoration-none d-block">Magnetic Circuits</a>
+                            <a href="bird08.html" class="text-decoration-none d-block">Electromagnetism</a>
+                            <a href="bird09.html" class="text-decoration-none d-block">Electromagnetic Induction</a>
+                            <a href="bird10.html" class="text-decoration-none d-block">Electrical Measuring Instruments and Measurements</a>
+                            <a href="bird11.html" class="text-decoration-none d-block">Semiconductor Diodes</a>
+                            <a href="bird12.html" class="text-decoration-none d-block">Transistors</a>
+                            <a href="bird13.html" class="text-decoration-none d-block">DC Circuit Theory</a>
+                            <a href="bird14.html" class="text-decoration-none d-block">Alternating Voltages and Currents</a>
+                            <a href="bird15.html" class="text-decoration-none d-block">Single-Phase Series AC Circuits</a>
+                            <a href="bird16.html" class="text-decoration-none d-block">Single-Phase Parallel AC Circuits</a>
+                            <a href="bird17.html" class="text-decoration-none d-block">Filter Networks</a>
+                            <a href="bird18.html" class="text-decoration-none d-block">DC Transients</a>
+                            <a href="bird19.html" class="text-decoration-none d-block">Operational Amplifiers</a>
+                            <a href="bird20.html" class="text-decoration-none d-block">Three-Phase Systems</a>
+                            <a href="bird21.html" class="text-decoration-none d-block">Transformers</a>
+                            <a href="bird22.html" class="text-decoration-none d-block">DC Machines</a>
+                            <a href="bird23.html" class="text-decoration-none d-block">Three-Phase Induction Motors</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="birdStudy.html" class="btn btn-read-more btn-success">Study</a>
+                        <a href="birdMastery.html" class="btn btn-read-more btn-success">Mastery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--EST-->
+    <div class="container-fluid py-3 px-4 my-5">
+      <div class="row g-4">
+        <div class="col-md-3">
+              <div class="card shadow-sm" style="height: auto;">
+                  <img src="estfundamentals.png" class="card-img-top" alt="EST Fundamentals">
+                  <div class="card-body d-flex flex-column">
+                      <p class="card-date">EST | # Items | 13 Chapters</p>
+                      <h5 class="card-title">EST Fundamentals ⭐⭐⭐⭐⭐</h5>
+                      <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="estfundamentals01.html" class="text-decoration-none d-block">Principles</a>
+                            <a href="estfundamentals02.html" class="text-decoration-none d-block">Analog Modulation</a>
+                            <a href="estfundamentals03.html" class="text-decoration-none d-block">Transmission Lines</a>
+                            <a href="estfundamentals04.html" class="text-decoration-none d-block">Antenna Systems</a>
+                            <a href="estfundamentals05.html" class="text-decoration-none d-block">Wave Propagation</a>
+                            <a href="estfundamentals06.html" class="text-decoration-none d-block" style="color: gray;">Microwave Communication</a>
+                            <a href="estfundamentals07.html" class="text-decoration-none d-block" style="color: gray;">Satellite Communications</a>
+                            <a href="estfundamentals08.html" class="text-decoration-none d-block" style="color: gray;">Fiber Optics</a>
+                            <a href="estfundamentals09.html" class="text-decoration-none d-block" style="color: gray;">Digital Communications</a>
+                            <a href="estfundamentals10.html" class="text-decoration-none d-block" style="color: gray;">Data Communications</a>
+                            <a href="estfundamentals11.html" class="text-decoration-none d-block" style="color: gray;">Telephony & Facsimile</a>
+                            <a href="estfundamentals12.html" class="text-decoration-none d-block" style="color: gray;">Cellular Communications</a>
+                            <a href="estfundamentals13.html" class="text-decoration-none d-block" style="color: gray;">Acoustics & Broadcasting</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                      
+                      <div class="progress-container">
+                        <div class="progress">
+                          <div 
+                            class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                            role="progressbar" 
+                            style="width: 21%;" 
+                            aria-valuenow="50" 
+                            aria-valuemin="0" 
+                            aria-valuemax="100">
+                            21%
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="examprimer.jpg" class="card-img-top" alt="Examprimer">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">EST | 435 Items | 26 Chapters</p>
+                    <h5 class="card-title">ExamPrimer ⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="examprimer01.html" class="text-decoration-none d-block">Layout of HF Stations</a>
+                            <a href="examprimer02.html" class="text-decoration-none d-block">Layout of FM Transmitters</a>
+                            <a href="examprimer03.html" class="text-decoration-none d-block">Layout of FM Receivers</a>
+                            <a href="examprimer04.html" class="text-decoration-none d-block">Layout of CW Transmitters</a>
+                            <a href="examprimer05.html" class="text-decoration-none d-block">Layout of SSB/CW Receivers</a>
+                            <a href="examprimer06.html" class="text-decoration-none d-block">Layout of SSB Transmitters</a>
+                            <a href="examprimer07.html" class="text-decoration-none d-block">Layout of Digital Systems</a>
+                            <a href="examprimer08.html" class="text-decoration-none d-block">Layout of Regulated Power Supplies</a>
+                            <a href="examprimer09.html" class="text-decoration-none d-block">Layout of Yagi-Uda Antennas</a>
+                            <a href="examprimer10.html" class="text-decoration-none d-block">Receiver Fundamentals</a>
+                            <a href="examprimer11.html" class="text-decoration-none d-block">Transmitter, Carrier, Keying, AM</a>
+                            <a href="examprimer12.html" class="text-decoration-none d-block">Carrier Suppression, SSB</a>
+                            <a href="examprimer13.html" class="text-decoration-none d-block">Frequency and Phase Modulation</a>
+                            <a href="examprimer14.html" class="text-decoration-none d-block">Station Accessories</a>
+                            <a href="examprimer15.html" class="text-decoration-none d-block">Digital Modes</a>
+                            <a href="examprimer16.html" class="text-decoration-none d-block">Antenna and Tower Safety</a>
+                            <a href="examprimer17.html" class="text-decoration-none d-block">RF Exposure Safety</a>
+                            <a href="examprimer18.html" class="text-decoration-none d-block">Propagation Types</a>
+                            <a href="examprimer19.html" class="text-decoration-none d-block">Ionospheric Regions</a>
+                            <a href="examprimer20.html" class="text-decoration-none d-block">Hops and Skips</a>
+                            <a href="examprimer21.html" class="text-decoration-none d-block">Ionsphere Issues</a>
+                            <a href="examprimer22.html" class="text-decoration-none d-block">Solar Activity</a>
+                            <a href="examprimer23.html" class="text-decoration-none d-block">MF and HF and Skywaves</a>
+                            <a href="examprimer24.html" class="text-decoration-none d-block">VHF and UHF, Sporadic-E, Aurora, Ducting</a>
+                            <a href="examprimer25.html" class="text-decoration-none d-block">Scatter-HF, VHF, UHF</a>
+                            <a href="examprimer26.html" class="text-decoration-none d-block">Feedlines and Antenna Systems</a>
+                            <a href="examprimer27.html" class="text-decoration-none d-block">Interference and Suppression</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="examprimerStudy.html" class="btn btn-read-more btn-success">Study</a>
+                        <a href="examprimerMastery.html" class="btn btn-read-more btn-success">Mastery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+              <div class="card shadow-sm" style="height: auto;">
+                  <img src="neets.jpg" class="card-img-top" alt="NEETS">
+                  <div class="card-body d-flex flex-column">
+                      <p class="card-date">EST | 839 Items | 4 Modules</p>
+                      <h5 class="card-title">NEETS ⭐⭐⭐⭐</h5>
+                      <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="neets01.html" class="text-decoration-none d-block">Wave Propagation</a>
+                            <a href="neets02.html" class="text-decoration-none d-block">Radio Wave Propagation</a>
+                            <a href="neets03.html" class="text-decoration-none d-block">Principles of Transmission Lines</a>
+                            <a href="neets04.html" class="text-decoration-none d-block">Antennas</a>
+                            <a href="neets05.html" class="text-decoration-none d-block">Waveguide Theory and Application</a>
+                            <a href="neets06.html" class="text-decoration-none d-block">Microwave Components and Circuits<br>Microwave Antennas</a>
+                            <a href="neets07.html" class="text-decoration-none d-block">Amplitude Modulation</a>
+                            <a href="neets08.html" class="text-decoration-none d-block">Angle and Pulse Modulation</a>
+                            <a href="neets09.html" class="text-decoration-none d-block">Demodulation</a>
+                            <a href="neets10.html" class="text-decoration-none d-block">Background on Fiber Optics<br>Fiber Optic Concepts</a>
+                            <a href="neets11.html" class="text-decoration-none d-block">Optical Fibers and Cables<br>Optical Splices, Connectors, and Couplers</a>
+                            <a href="neets12.html" class="text-decoration-none d-block">Fiber Optic Measurement Techniques<br>Optical Sources and Fiber Optic Transmitters</a>
+                            <a href="neets13.html" class="text-decoration-none d-block">Optical Detectors and Fiber Optic Receivers<br>Fiber Optic Links</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="neetsmod10.html" class="btn btn-read-more btn-success">Module 10</a>
+                        <a href="neetsmod11.html" class="btn btn-read-more btn-success">Module 11</a>
+                        <a href="neetsmod12.html" class="btn btn-read-more btn-success">Module 12</a>
+                        <a href="neetsmod24.html" class="btn btn-read-more btn-success">Module 24</a>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+              <div class="card shadow-sm" style="height: auto;">
+                  <img src="forouzan.jpg" class="card-img-top" alt="Forouzan">
+                  <div class="card-body d-flex flex-column">
+                      <p class="card-date">EST | 195 Items | 5 Chapters</p>
+                      <h5 class="card-title">Forouzan ⭐⭐⭐</h5>
+                      <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="forouzan01.html" class="text-decoration-none d-block">Introduction to Data Communications and Networking</a>
+                            <a href="forouzan02.html" class="text-decoration-none d-block">Network Models</a>
+                            <a href="forouzan03.html" class="text-decoration-none d-block">Data and Signals</a>
+                            <a href="forouzan04.html" class="text-decoration-none d-block">Digital Transmission</a>
+                            <a href="forouzan05.html" class="text-decoration-none d-block">Analog Transmission</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        <a href="forouzanStudy.html" class="btn btn-read-more btn-success">Study</a>
+                        <a href="forouzanMastery.html" class="btn btn-read-more btn-success">Mastery</a>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm" style="height: auto;">
+                <img src="frenzel.jpg" class="card-img-top" alt="Frenzel">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-date">EST | 503 Items | 14 Chapters</p>
+                    <h5 class="card-title">Frenzel ⭐⭐⭐⭐</h5>
+                    <div class="scrollable-text flex-grow-1">
+                      <p class="card-text">
+                        <a href="frenzel01.html" class="text-decoration-none d-block">Introduction to Electronic Communications</a>
+                        <a href="frenzel02.html" class="text-decoration-none d-block">Amplitude Modulation and Single-Sideband Modulation</a>
+                        <a href="frenzel03.html" class="text-decoration-none d-block">Amplitude Modulation Circuits</a>
+                        <a href="frenzel04.html" class="text-decoration-none d-block">Frequency Modulation</a>
+                        <a href="frenzel05.html" class="text-decoration-none d-block">Frequency Modulation Circuits</a>
+                        <a href="frenzel06.html" class="text-decoration-none d-block">Radio Transmitters</a>
+                        <a href="frenzel07.html" class="text-decoration-none d-block">Communications Receivers</a>
+                        <a href="frenzel08.html" class="text-decoration-none d-block">Multiplexing</a>
+                        <a href="frenzel09.html" class="text-decoration-none d-block">Antennas and Transmission Lines</a>
+                        <a href="frenzel10.html" class="text-decoration-none d-block">Microwave Techniques</a>
+                        <a href="frenzel11.html" class="text-decoration-none d-block">Introduction to Satellite Communications</a>
+                        <a href="frenzel12.html" class="text-decoration-none d-block">Data Communications</a>
+                        <a href="frenzel13.html" class="text-decoration-none d-block">Fiber-Optic Communications</a>
+                        <a href="frenzel14.html" class="text-decoration-none d-block">Modern Communications Applications</a>
+                      </p>
+                  </div>
+                  <div class="mt-3">
+                      <a href="frenzelStudy.html" class="btn btn-read-more btn-success">Study</a>
+                      <a href="frenzelMastery.html" class="btn btn-read-more btn-success">Mastery</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+              <div class="card shadow-sm" style="height: auto;">
+                  <img src="tomasi.png" class="card-img-top" alt="Tomasi">
+                  <div class="card-body d-flex flex-column">
+                      <p class="card-date">EST | # Items | 26 Chapters</p>
+                      <h5 class="card-title">Tomasi ⭐⭐⭐</h5>
+                      <div class="scrollable-text flex-grow-1">
+                        <p class="card-text">
+                            <a href="tomasi01.html" class="text-decoration-none d-block">Introduction</a>
+                            <a href="tomasi02.html" class="text-decoration-none d-block">Signal Analysis and Mixing</a>
+                            <a href="tomasi03.html" class="text-decoration-none d-block">Oscillators, PLL, Frequency Synthesizers</a>
+                            <a href="tomasi04.html" class="text-decoration-none d-block">Amplitude Modulation Transmission</a>
+                            <a href="tomasi05.html" class="text-decoration-none d-block">Amplitude Modulation Reception</a>
+                            <a href="tomasi06.html" class="text-decoration-none d-block" style="color: gray;">Chapter 6</a>
+                            <a href="tomasi07.html" class="text-decoration-none d-block" style="color: gray;">Chapter 7</a>
+                            <a href="tomasi08.html" class="text-decoration-none d-block" style="color: gray;">Chapter 8</a>
+                            <a href="tomasi09.html" class="text-decoration-none d-block" style="color: gray;">Chapter 9</a>
+                            <a href="tomasi10.html" class="text-decoration-none d-block" style="color: gray;">Chapter 10</a>
+                            <a href="tomasi11.html" class="text-decoration-none d-block" style="color: gray;">Chapter 11</a>
+                            <a href="tomasi12.html" class="text-decoration-none d-block" style="color: gray;">Chapter 12</a>
+                            <a href="tomasi13.html" class="text-decoration-none d-block" style="color: gray;">Chapter 13</a>
+                            <a href="tomasi14.html" class="text-decoration-none d-block" style="color: gray;">Chapter 14</a>
+                            <a href="tomasi15.html" class="text-decoration-none d-block" style="color: gray;">Chapter 15</a>
+                            <a href="tomasi16.html" class="text-decoration-none d-block" style="color: gray;">Chapter 16</a>
+                            <a href="tomasi17.html" class="text-decoration-none d-block" style="color: gray;">Chapter 17</a>
+                            <a href="tomasi18.html" class="text-decoration-none d-block" style="color: gray;">Chapter 18</a>
+                            <a href="tomasi19.html" class="text-decoration-none d-block" style="color: gray;">Chapter 19</a>
+                            <a href="tomasi20.html" class="text-decoration-none d-block" style="color: gray;">Chapter 20</a>
+                            <a href="tomasi21.html" class="text-decoration-none d-block" style="color: gray;">Chapter 21</a>
+                            <a href="tomasi22.html" class="text-decoration-none d-block" style="color: gray;">Chapter 22</a>
+                            <a href="tomasi23.html" class="text-decoration-none d-block" style="color: gray;">Chapter 23</a>
+                            <a href="tomasi24.html" class="text-decoration-none d-block" style="color: gray;">Chapter 24</a>
+                            <a href="tomasi25.html" class="text-decoration-none d-block" style="color: gray;">Chapter 25</a>
+                            <a href="tomasi26.html" class="text-decoration-none d-block" style="color: gray;">Chapter 26</a>
+                        </p>
+                    </div>
+                    <div class="mt-3">
+                        
+                      <div class="progress-container">
+                        <div class="progress">
+                          <div 
+                            class="progress-bar bg-success progress-bar-striped progress-bar-animated" 
+                            role="progressbar" 
+                            style="width: 19%;" 
+                            aria-valuenow="50" 
+                            aria-valuemin="0" 
+                            aria-valuemax="100">
+                            19%
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-2">
+        <div class="container">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <h5 class="text-uppercase mb-3">About</h5>
+              <p class="small">
+                At my core, I am committed to empowering your success with exceptional online resources tailored to your unique learning needs. My mission is to enrich your educational journey by delivering meticulously curated<strong> FREE </strong>content and expert insights that not only inform but inspire. I believe in your potential and strive to provide the tools and knowledge necessary to unlock it. Join the group as we transform learning into an engaging and rewarding experience that drives you toward your goals!
+              </p>
+              <div class="d-flex align-items-center mt-3">
+                <a href="https://www.facebook.com/share/g/AbBJyUEvDURwsHbT/" class="text-white me-2" style="font-size: 60px;">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <span class="h6 mb-0">Join here 👉🏻<a href="https://www.facebook.com/share/g/AbBJyUEvDURwsHbT/" target="_blank">ECE MCQs</a>👈🏻 our fb group.</span>
+              </div>
+            </div>
+      
+            <!-- Quick Links 
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <h5 class="text-uppercase mb-3">Recommended Review Centers</h5>
+              <ul class="list-unstyled">
+                <li><a href="https://www.facebook.com/smartedgeece" class="text-white text-decoration-none" target="_blank">✅Smart Edge ECE Review Spec.</a></li>
+                <li><a href="https://www.facebook.com/excelreviewcenter" class="text-white text-decoration-none" target="_blank">✅Excel Review Center</a></li>
+                <li><a href="https://www.facebook.com/topecereviewcenter" class="text-white text-decoration-none" target="_blank">✅Top ECE Review Center</a></li>
+                <li><a href="https://www.facebook.com/percdcofficial" class="text-white text-decoration-none" target="_blank">✅PercDC Learnhub</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61559548765301" class="text-white text-decoration-none" target="_blank">✅Morph ECE Review Center</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100054244489990" class="text-white text-decoration-none" target="_blank">✅CertC ECE Review Center</a></li>
+                <li><a href="https://www.facebook.com/one.piECE.online.review" class="text-white text-decoration-none" target="_blank">✅One PiECE Oneline Review</a></li>
+                <li><a href="https://www.facebook.com/CRTreviewcenter" class="text-white text-decoration-none" target="_blank">✅CRT Center</a></li>
+                <li><a href="https://www.facebook.com/parrenoreview?mibextid=ZbWKwL" class="text-white text-decoration-none" target="_blank">✅Parreño Online Review</a></li>
+              </ul>
+            </div>
+            -->
+            
+            <!-- Contact Info -->
+            <div class="col-lg-4 col-md-12">
+              <h5 class="text-uppercase mb-3">Contacts</h5>
+              <p class="small">
+                <i class="fas fa-envelope me-2"></i> noemail@example.com
+              </p>
+              <p class="small">
+                <i class="fas fa-phone me-2"></i> +63 912 3456 789
+              </p>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom -->
+          <div class="row mt-4">
+            <div class="col text-center">
+              <hr class="mb-2">
+              <p class="small mb-0">EngrMCQ by Engr Puhon &copy; 2025. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+      
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Self-Destruction: If the script detects it's being run in a local file, it disables itself
+        if (location.protocol === 'file:') {
+            console.log("This script cannot run locally.");
+            // Overwrite all critical functions to disable the quiz
+            document.body.innerHTML = ""; // Clear the entire page content
+        }
+
+        // Add the 'no-select' class to the body
+        document.body.classList.add('no-select');
+
+        // Prevent text selection through selectstart event
+        document.addEventListener('selectstart', (e) => {
+            e.preventDefault();
+        });
+
+        // Function to prevent right-click and context menu
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Function to disable common keyboard shortcuts
+        document.addEventListener('keydown', function (e) {
+            // Prevent default actions for Ctrl+S, Ctrl+P, Ctrl+U, F12, and Ctrl+Shift+I
+            if (e.ctrlKey && (e.key === 's' || e.key === 'p' || e.key === 'u' || (e.key === 'I' && e.shiftKey)) || e.key === 'F12') {
+                e.preventDefault();
+            }
+        
+            // Alternative way to capture Ctrl+Shift+I using keyCode
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) { // 73 is the keyCode for 'I'
+                e.preventDefault();
+            }
+        });
+        
+        // Timer
+        // Set your target date and time here
+        // Format: 'YYYY-MM-DDTHH:MM:SS'
+        const targetDate = new Date('2025-04-02T08:00:00'); // Board Exam day
+        function getTimeSegmentElements(segmentElement) {
+          const segmentDisplay = segmentElement.querySelector('.segment-display');
+          const segmentDisplayTop = segmentDisplay.querySelector('.segment-display__top');
+          const segmentDisplayBottom = segmentDisplay.querySelector('.segment-display__bottom');
+        
+          const segmentOverlay = segmentDisplay.querySelector('.segment-overlay');
+          const segmentOverlayTop = segmentOverlay.querySelector('.segment-overlay__top');
+          const segmentOverlayBottom = segmentOverlay.querySelector('.segment-overlay__bottom');
+        
+          return {
+            segmentDisplayTop,
+            segmentDisplayBottom,
+            segmentOverlay,
+            segmentOverlayTop,
+            segmentOverlayBottom,
+          };
+        }
+
+        function updateSegmentValues(displayElement, overlayElement, value) {
+          displayElement.textContent = value;
+          overlayElement.textContent = value;
+        }
+
+        function updateTimeSegment(segmentElement, timeValue) {
+          const segmentElements = getTimeSegmentElements(segmentElement);
+        
+          if (parseInt(segmentElements.segmentDisplayTop.textContent, 10) === timeValue) {
+            return;
+          }
+        
+          segmentElements.segmentOverlay.classList.add('flip');
+          updateSegmentValues(segmentElements.segmentDisplayTop, segmentElements.segmentOverlayBottom, timeValue);
+        
+          function finishAnimation() {
+            segmentElements.segmentOverlay.classList.remove('flip');
+            updateSegmentValues(segmentElements.segmentDisplayBottom, segmentElements.segmentOverlayTop, timeValue);
+            this.removeEventListener('animationend', finishAnimation);
+          }
+        
+          segmentElements.segmentOverlay.addEventListener('animationend', finishAnimation);
+        }
+
+        function updateTimeSection(sectionID, timeValue) {
+          const sectionElement = document.getElementById(sectionID);
+          const timeSegments = sectionElement.querySelectorAll('.time-segment');
+        
+          if (sectionID === 'days') {
+            const firstNumber = Math.floor(timeValue / 100) || 0;
+            const secondNumber = Math.floor((timeValue % 100) / 10) || 0;
+            const thirdNumber = timeValue % 10 || 0;
+          
+            // Adjust segment visibility for two-digit days
+            if (timeValue < 100) {
+              timeSegments[0].style.display = 'none'; // Hide the first segment
+            } else {
+              timeSegments[0].style.display = 'flex'; // Show the first segment
+            }
+          
+            updateTimeSegment(timeSegments[0], firstNumber);
+            updateTimeSegment(timeSegments[1], secondNumber);
+            updateTimeSegment(timeSegments[2], thirdNumber);
+          } else {
+            const tens = Math.floor(timeValue / 10) || 0;
+            const units = timeValue % 10 || 0;
+          
+            updateTimeSegment(timeSegments[0], tens);
+            updateTimeSegment(timeSegments[1], units);
+          }
+        }
+
+        function getTimeRemaining(targetDateTime) {
+          const nowTime = Date.now();
+          const complete = nowTime >= targetDateTime;
+        
+          if (complete) {
+            return {
+              complete,
+              days: 0,
+              hours: 0,
+              minutes: 0,
+              seconds: 0,
+            };
+          }
+        
+          const secondsRemaining = Math.floor((targetDateTime - nowTime) / 1000);
+          const days = Math.floor(secondsRemaining / 86400); // 86400 seconds in a day
+          const hours = Math.floor((secondsRemaining % 86400) / 3600); // 3600 seconds in an hour
+          const minutes = Math.floor((secondsRemaining % 3600) / 60);
+          const seconds = secondsRemaining % 60;
+        
+          return {
+            complete,
+            days,
+            hours,
+            minutes,
+            seconds,
+          };
+        }
+
+        function updateCountdown() {
+          const timeRemaining = getTimeRemaining(targetDate.getTime());
+        
+          updateTimeSection('days', timeRemaining.days);
+          updateTimeSection('hours', timeRemaining.hours);
+          updateTimeSection('minutes', timeRemaining.minutes);
+          updateTimeSection('seconds', timeRemaining.seconds);
+        
+          if (timeRemaining.complete) {
+            clearInterval(countdownInterval);
+          }
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call to set the countdown right away
+
+    </script>
+</body>
+</html>
