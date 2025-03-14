@@ -1,0 +1,302 @@
+[
+    {
+        "question": "Evaluate the limit of (x²-1)/(x²+3x-4) as x approaches 1.",
+        "choices": [
+            "1/5",
+            "2/5",
+            "3/5",
+            "4/5"
+        ],
+        "correct": "2/5",
+        "image": "",
+        "image2": "https://www.youtube.com"
+    },
+    {
+        "question": "Evaluate the limit of (3x²+2x+1)/(x²+x+1) as x approaches infinity.",
+        "choices": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "correct": "3",
+        "image": "",
+        "image2": "https://www.youtube.com"
+    },
+    {
+        "question": "Evaluate:",
+        "choices": [
+            "2/3",
+            "1/3",
+            "0",
+            "∞"
+        ],
+        "correct": "1/3",
+        "image": "https://drive.google.com/thumbnail?id=1504EOrYi1j257z-EiEihV6M77PxM_fQU",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (5x²-3x+4)/(2x²+x-7) as x approaches infinity.",
+        "choices": [
+            "5/2",
+            "2/5",
+            "limit does not exist",
+            "∞"
+        ],
+        "correct": "5/2",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate:",
+        "choices": [
+            "2",
+            "0",
+            "-∞",
+            "+∞"
+        ],
+        "correct": "2",
+        "image": "https://drive.google.com/thumbnail?id=1HVFgHGcvWeGF_wS4PaLOHX7lX5o_PTcD",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate:",
+        "choices": [
+            "+∞",
+            "indeterminate",
+            "1",
+            "1/2"
+        ],
+        "correct": "1/2",
+        "image": "https://drive.google.com/thumbnail?id=1gjdkiQZevtzYKvBpWixsYJMGN2lU_fdx",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate:",
+        "choices": [
+            "1",
+            "2",
+            "3",
+            "indeterminate"
+        ],
+        "correct": "3",
+        "image": "https://drive.google.com/thumbnail?id=1WxGnyjT8QSk9eA-hnknzM7Tjtke5VW3z",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (x-4)/(x²-8x-16) as x approaches 4.",
+        "choices": [
+            "1",
+            "-1",
+            "indeterminate",
+            "∞"
+        ],
+        "correct": "indeterminate",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Find the limit of xe^-2x as x approaches infinity.",
+        "choices": [
+            "∞",
+            "1",
+            "-1",
+            "0"
+        ],
+        "correct": "0",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Find the limit of (e^x + e^-x -2)/5x² as x approaches 0.",
+        "choices": [
+            "1/3",
+            "1/4",
+            "1/5",
+            "1/6"
+        ],
+        "correct": "1/5",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Find the limit of ln(2+x)/(x+1) as x approaches -1.",
+        "choices": [
+            "-1",
+            "-2",
+            "1",
+            "2"
+        ],
+        "correct": "1",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of [((1/x)–1)/((e^x)–1)] as x approaches 0.",
+        "choices": [
+            "1/e",
+            "1/2",
+            "e",
+            "2e"
+        ],
+        "correct": "1/2",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (1-cosx)/x² as x approaches 0.",
+        "choices": [
+            "0",
+            "1/2",
+            "2",
+            "-1/2"
+        ],
+        "correct": "1/2",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (e^2x – 1)/tanx as x approaches zero.",
+        "choices": [
+            "1",
+            "2",
+            "-1",
+            "-2"
+        ],
+        "correct": "2",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (cosx – 1)/(cos2x - 1) as x approaches 0.",
+        "choices": [
+            "1/4",
+            "1/2",
+            "2",
+            "4"
+        ],
+        "correct": "1/4",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Find the limit of sin 5x/sin 4x as x approaches zero.",
+        "choices": [
+            "2",
+            "1/2",
+            "4/5",
+            "5/4"
+        ],
+        "correct": "5/4",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (cosx – 1)/x² as x approaches 0.",
+        "choices": [
+            "∞",
+            "indeterminate",
+            "1",
+            "-1/2"
+        ],
+        "correct": "-1/2",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (sinx)/x as x→∞.",
+        "choices": [
+            "0",
+            "1",
+            "-1",
+            "infinity"
+        ],
+        "correct": "0",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of sin(πcos²x)/x² as x→0.",
+        "choices": [
+            "π",
+            "0",
+            "1",
+            "-1"
+        ],
+        "correct": "π",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (cosx - 1)/x as x approaches zero.",
+        "choices": [
+            "-1",
+            "0",
+            "1",
+            "2"
+        ],
+        "correct": "0",
+        "image": "",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate:",
+        "choices": [
+            "π",
+            "-1",
+            "limit does not exist",
+            "2"
+        ],
+        "correct": "limit does not exist",
+        "image": "https://drive.google.com/thumbnail?id=1KTnLzKReDtFLzOsHWPTi8NXh5bmMWLD0",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate:",
+        "choices": [
+            "2/3",
+            "-2/3",
+            "3/2",
+            "-3/2"
+        ],
+        "correct": "3/2",
+        "image": "https://drive.google.com/thumbnail?id=1bfbczZqeMnkQv0321LNrG8DFx5-ltnWC",
+        "image2": "https://www.ecemcq.com"
+    },
+    {
+        "question": "Evaluate the limit of (1 – sin³x) as x approaches zero.",
+        "choices": [
+            "infinity",
+            "undefined",
+            "0",
+            "1"
+        ],
+        "correct": "1",
+        "image": "",
+        "image2": ""
+    },
+    {
+        "question": "Evaluate the limit of lnx/5x as x approaches +∞.",
+        "choices": [
+            "undefined",
+            "0",
+            "1",
+            "-1"
+        ],
+        "correct": "0",
+        "image": "",
+        "image2": ""
+    },
+    {
+        "question": "",
+        "choices": [
+            "0",
+            "1",
+            "-1",
+            "infinity"
+        ],
+        "correct": "-1",
+        "image": "https://drive.google.com/thumbnail?id=1YVL06N7y0GLd65jx5r72w8D83iMqDbvS",
+        "image2": ""
+    }
+]
