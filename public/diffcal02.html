@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIFFENTIAL CALCULUS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background: none;
+        padding: 0 5%;
+        background-color: #fff;
+      }
+      .solution-link {
+        display: block;
+        margin: 0.2rem 0;
+        padding: 0 2rem;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+      }
+      .solution-link:hover {
+        text-decoration: underline;
+      }
+      .solution-text {
+        margin: 0.2rem 0;
+        padding: 0 2rem;
+        font-size: 1.1em;
+        color: #333;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 0;
+        }
+        .quiz-container {
+          padding: 20px 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Limits of a Function</h1>
+      <form id="quiz">Importing Questions...</form>
+    </div>
+
+    <button id="submit">Submit</button>
+    <div id="results"></div>
+
+    <script>
+      if (location.protocol === "file:") {
+        console.log("This script cannot run locally.");
+
+        document.body.innerHTML = "";
+      }
+
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (
+          (e.ctrlKey &&
+            (e.key === "s" ||
+              e.key === "p" ||
+              e.key === "u" ||
+              (e.key === "I" && e.shiftKey))) ||
+          e.key === "F12"
+        ) {
+          e.preventDefault();
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+          e.preventDefault();
+        }
+      });
+
+      document.body.classList.add("no-select");
+
+      document.addEventListener("selectstart", (e) => {
+        e.preventDefault();
+      });
+
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+
+      const quiz = document.getElementById("quiz");
+      const submitBtn = document.getElementById("submit");
+      const results = document.getElementById("results");
+
+      let shuffledQuizData = [];
+
+      function loadQuiz() {
+        fetch("/api/questions?file=diffcalLimits")
+          .then((response) => response.json())
+          .then((quizData) => {
+            shuffleQuestions(quizData);   //Shuffle Questions
+            shuffleChoices(quizData);     //Shuffle Choices
+            shuffledQuizData = quizData;
+            const quizContent = quizData
+              .map((q, index) => {
+                let image2Content = "";
+
+                if (q.image2) {
+                  if (q.image2.match(/\.(jpeg|jpg|png|gif)$/)) {
+                    image2Content = `<img src="${q.image2}" class="solution-image">`;
+                  } else if (q.image2.startsWith("http")) {
+                    image2Content = `<a href="${q.image2}" target="_blank" class="solution-link"> Proceed to Solution </a>`;
+                  } else {
+                    image2Content = `<p class="solution-text">${q.image2}</p>`;
+                  }
+                }
+
+                return `
+                    <div class="quiz-item">
+                        <h2 class="question-number">Question ${index + 1}</h2>
+                        <hr class="question-divider">
+                        <h3>${q.question}</h3>
+                        ${
+                          q.image
+                            ? `<img src="${q.image}" class="question-image">`
+                            : ""
+                        }
+                        <ul>
+                            ${q.choices
+                              .map(
+                                (choice, i) =>
+                                  `<li>
+                                    <input type="radio" name="question${index}" id="q${index}${i}" value="${choice}" class="answer">
+                                    <label for="q${index}${i}">${choice}</label>
+                                </li>`
+                              )
+                              .join("")}
+                        </ul>
+                        ${
+                          q.image2
+                            ? `
+                            <button class="show-image-btn" id="image-btn-${index}" type="button" 
+                                onclick="toggleImage(${index})" style="display: none;"> ▼ </button>
+                            <div class="image2-container" id="image2-${index}" style="display: none;">
+                                ${image2Content}
+                            </div>
+                        `
+                            : ""
+                        }
+                    </div>
+                `;
+              })
+              .join("");
+            quiz.innerHTML = quizContent;
+          })
+          .catch((error) => console.error("Error fetching quiz data:", error));
+      }
+
+      function toggleImage(index) {
+        const imageContainer = document.getElementById(`image2-${index}`);
+        imageContainer.style.display =
+          imageContainer.style.display === "none" ? "block" : "none";
+      }
+
+      function shuffleQuestions(quizData) {
+        shuffleArray(quizData);
+      }
+
+      function shuffleChoices(quizData) {
+        quizData.forEach((q) => shuffleArray(q.choices));
+      }
+
+      submitBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        let score = 0;
+        shuffledQuizData.forEach((q, index) => {
+          const selected = document.querySelector(
+            `input[name="question${index}"]:checked`
+          );
+          const correctAnswer = document.querySelector(
+            `input[name="question${index}"][value="${q.correct}"]`
+          );
+          if (selected && selected.value === q.correct) {
+            score++;
+          }
+          if (correctAnswer) {
+            correctAnswer.nextElementSibling.classList.add("correct-answer");
+          }
+
+          // Reveal the Solution button after submission
+          const showImageBtn = document.getElementById(`image-btn-${index}`);
+          if (showImageBtn) {
+            showImageBtn.style.display = "block";
+          }
+        });
+
+        let resultMessage = "";
+        if (score <= 21) {
+          resultMessage = "Bad";
+        } else if (score <= 22) {
+          resultMessage = "Not bad";
+        } else if (score <= 23) {
+          resultMessage = "Good";
+        } else if (score === 24) {
+          resultMessage = "Very good";
+        } else if (score === 25) {
+          resultMessage = "Perfect";
+        }
+
+        results.innerHTML = `
+        <button onclick="location.reload()">Retake</button>
+        <h2> ${score}/${shuffledQuizData.length} - ${resultMessage}</h2>
+    `;
+        submitBtn.style.display = "none";
+      });
+
+      loadQuiz();
+    </script>
+  </body>
+</html>
